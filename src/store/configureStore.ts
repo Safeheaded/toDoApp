@@ -1,6 +1,6 @@
 import { createStore, compose } from 'redux';
 
-import { mainReducer } from './reducers/reducer';
+import { reducer } from './reducers/reducer';
 
 declare global {
     interface Window { __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any; }
@@ -13,7 +13,7 @@ if(__DEV__){
 }
 
 const configureStore = () => {
-    return createStore(mainReducer, composeEnhancers());
+    return createStore(reducer, composeEnhancers());
 }
 
 export default configureStore;
