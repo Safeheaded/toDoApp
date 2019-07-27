@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "dev-a": "react-native run-android",
-    "dev-i": "react-native run-ios"
+    "dev-i": "react-native run-ios",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "@types/react-native-vector-icons": "^6.4.1",

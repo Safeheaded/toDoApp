@@ -5,13 +5,13 @@ import {
     AddTodoAction
 } from '../types';
 
-import { ADD_TODO, REMOVE_TODO } from '../actions/actionTypes';
+import { ADD_TODO, REMOVE_TODO } from '../constants/actionTypes';
 
-const initialState: State = {
+export const initialState: State = {
     todos: []
 };
 
-export const mainReducer = (state = initialState, action: actionTypes) : State => {
+export const reducer = (state = initialState, action: actionTypes) : State => {
 
     switch (action.type) {
         case ADD_TODO:

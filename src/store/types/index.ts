@@ -1,4 +1,4 @@
-import * as actions from '../actions/actionTypes';
+import * as actions from '../constants/actionTypes';
 import { Action } from 'redux';
 
 export interface Todo {
@@ -20,4 +20,9 @@ export interface RemoveTodoAction extends Action {
     payload: string
 }
 
-export type actionTypes = AddTodoAction | RemoveTodoAction;
+export interface testEmptyAction {
+    type?: any,
+    payload?: any
+}
+
+export type actionTypes = AddTodoAction | RemoveTodoAction | testEmptyAction;

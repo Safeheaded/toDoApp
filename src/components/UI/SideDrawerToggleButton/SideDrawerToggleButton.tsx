@@ -2,12 +2,11 @@ import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-// FIXME:
-interface props {
+interface Props {
     onToggle: () => void
 }
 
-const sideDrawerToggleButton = (props: props) => {
+const sideDrawerToggleButton = (props: Props) => {
 
     return (
         <TouchableOpacity onPress={props.onToggle}>
