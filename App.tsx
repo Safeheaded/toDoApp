@@ -9,35 +9,21 @@
  */
 
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text
-} from 'react-native';
 
-class App extends React.Component{
+import { createDrawerNavigator, createAppContainer } from 'react-navigation';
 
-  render(){
-    return (
-        <View style={styles.mainView}>
-          <Text style={styles.text}>
-            Your app is working. To configure edit App.tsx
-          </Text>
-        </View>
-    );
-  }
+import TodoListScreen from './src/screens/TodoListScreen/TodoListScreen';
+import AddTodoScreen from './src/screens/AddTodoScreen/AddTodoScreen';
 
-}
-
-const styles = StyleSheet.create({
-  mainView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+const DrawerNavigator = createDrawerNavigator({
+  TodoList: {
+    screen: TodoListScreen
   },
-  text: {
-    color: "black"
+  AddTodo: {
+    screen: AddTodoScreen
   }
 });
 
-export default App;
+
+
+export default createAppContainer(DrawerNavigator);
