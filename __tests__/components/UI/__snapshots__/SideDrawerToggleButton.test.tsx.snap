@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Should match to snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+>
+  <Icon
+    allowFontScaling={false}
+    name="md-menu"
+    size={35}
+  />
+</TouchableOpacity>
+`;

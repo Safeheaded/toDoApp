@@ -5,7 +5,7 @@ import SideDrawerToggleButton from '../../components/UI/SideDrawerToggleButton/S
 import { DrawerActions, NavigationToggleDrawerAction, NavigationDrawerScreenOptions } from 'react-navigation';
 import ProtoScreen from '../ProtoScreen/ProtoScreen';
 
-class AddTodoScreen extends ProtoScreen{
+export class AddTodoScreen extends ProtoScreen{
 
     static navigationOptions: NavigationDrawerScreenOptions = {
         drawerLabel: "Dodaj zadanie",
