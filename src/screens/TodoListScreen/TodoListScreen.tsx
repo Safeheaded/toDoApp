@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { DrawerActions } from 'react-navigation';
 
-import SideDrawerToggleButton from 'UI/SideDrawerToggleButton/SideDrawerToggleButton';
+import SideDrawerToggleButton from '../../components/UI/SideDrawerToggleButton/SideDrawerToggleButton';
 
 // FIXME:
 interface props{
