@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { DrawerActions } from 'react-navigation';
+import { DrawerActions, NavigationDrawerScreenOptions } from 'react-navigation';
 
 import SideDrawerToggleButton from '../../components/UI/SideDrawerToggleButton/SideDrawerToggleButton';
+import ProtoScreen from '../ProtoScreen/ProtoScreen';
 
-// FIXME:
-interface props{
-    navigation: {
-        dispatch: (NavigationToggleDrawerAction: any) => void
-    }
-}
+class TodoListScreen extends ProtoScreen{
 
-class TodoListScreen extends Component<props>{
-
-    static navigationOptions = {
+    static navigationOptions: NavigationDrawerScreenOptions = {
         drawerLabel: "Lista zadań"
-    }
-
-    sideDrawerHandler = () => {
-        this.props.navigation.dispatch(DrawerActions.toggleDrawer())
     }
 
     render(){

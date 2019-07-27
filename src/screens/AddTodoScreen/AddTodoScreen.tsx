@@ -2,23 +2,13 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 import SideDrawerToggleButton from '../../components/UI/SideDrawerToggleButton/SideDrawerToggleButton';
-import { DrawerActions, NavigationToggleDrawerAction } from 'react-navigation';
- 
-// FIXME:
-interface props{
-    navigation: {
-        dispatch: (NavigationToggleDrawerAction: any) => void
-    }
-}
+import { DrawerActions, NavigationToggleDrawerAction, NavigationDrawerScreenOptions } from 'react-navigation';
+import ProtoScreen from '../ProtoScreen/ProtoScreen';
 
-class AddTodoScreen extends Component<props>{
+class AddTodoScreen extends ProtoScreen{
 
-    static navigationOptions = {
-        drawerLabel: "Dodaj zadanie"
-    }
-
-    sideDrawerHandler = () => {
-        this.props.navigation.dispatch(DrawerActions.toggleDrawer())
+    static navigationOptions: NavigationDrawerScreenOptions = {
+        drawerLabel: "Dodaj zadanie",
     }
 
     render(){
